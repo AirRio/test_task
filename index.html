@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
+    <title>Frontend_3</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li class='vert' id='logo'>Frontend Development Course</li>
+            <li class='vert'><a href="mailto:arrow2w2@gmail.com">Почта</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h1>Темы</h1>
+        <div>
+            <p>
+                <input type="radio" name="review_type" value="cat"> Кошка<br>
+                <input type="radio" name="review_type" value="dog"> Собака<br>
+                <input type="radio" name="review_type" value="parrot"> Попугай<br>
+                <button onclick="checkType(value)">Выбрать</button>
+            </p>
+        </div>
+        <br>
+        <br>
+        <h2 id="head"></h2>
+        <span id="text"></span>
+        <span id="img"></span>
+        <br>
+        <br>
+        <h2 class="line">Оставить отзыв</h2>
+        <textarea name="feed" id="feed" cols="30" rows="10"></textarea>
+        <br>
+        <button id='click'  onclick="getAjax();">Отправить</button>
+        <br>
+        <br>
+        <h2 class="line">Отзывы</h2>
+        <br>
+        <div>1. Неплохо</div>
+        <br>
+        <div class='info' id='submit'></div>
+        <div></div>
+    </main>
+
+    <footer>
+        <ul>
+            <li> 2020 © </li>
+            <li id='logo'>by Vladislav Kozlovski</li>
+        </ul>
+    </footer>
+</body>
+</html>
